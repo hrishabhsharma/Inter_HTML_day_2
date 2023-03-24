@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 2</title>
+</head>
+<body>
+    <h2>Question No-1</h2>
+    <h3>Explain br tags</h3>
+    <pre style="font-size: 16px;">
+        The br tag in HTML documents is used to create a line break in a text. It is an empty tag
+        which means it does not need an end tag like </>.
+        Browser does not recognize new line and paragraph formatting in the text. If you want to
+        start a new line, you need to insert a line break with the help of br tag.
+        It is generally used in poems and addresses where the division of line is necessary.
+    </pre>
+    <br><hr><br>
+    
+    <h2>Question No-2</h2>
+    <h3>Explain how many different types of lists we have in html</h3>
+    <pre style="font-size: 16px;">
+        HTML lists allow web developers to group a set of related items in lists.
+        There are three types of lists.
+        1. Unordered list
+        2. Ordered list
+        3. Description list
+
+        #Unordered HTML List
+            An unordered list starts with the &ltul> tag. Each list item starts with the &ltli> tag.
+            The list items will be marked with bullets (small black circles) by default.
+        #Ordered HTML list
+            An ordered list starts with the &ltol> tag. Each list item starts with the &ltli> tag.
+            The list items will be marked with numbers by default.
+        #Description list
+            A description list is a list of terms, with a description of each term.
+            The &ltdl> tag defines the description list, the &ltdt> tag defines the term (name), and the &ltdd> tag describes each term.
+
+    </pre>
+    <br><hr><br>
+
+    <h2>Question No-3</h2>
+    <h3>What are semantic tags</h3>
+    <pre style="font-size: 16px;">
+        A semantic element clearly describes its meaning to both the browser and the developer.
+        Examples of non-semantic elements: &ltdiv> and &ltspan> - Tells nothing about its content.
+        Examples of semantic elements: &ltform>, &lttable>, and &ltarticle> - Clearly defines its content.
+
+    </pre>
+    <br><hr><br>
+
+    <h2>Question No-4</h2>
+    <h3>Write code to create an ordered list with roman numbers</h3>
+    <pre style="font-size: 16px;">
+        Ordered list in html is used to create list elements which are following some specific order. Its default type is number or “1”.
+
+        <strong>Code:</strong>
+        
+        &ltol type="I"&gt
+            &ltli&gtApple&lt/li&gt
+            &ltli&gtOrange&lt/li&gt
+            &ltli&gtBanana&lt/li&gt
+            &lt/ol&gt
+
+    </pre>
+    <br><hr><br>
+
+    <h2>Question No-5</h2>
+    <h3>Write code to create an unordered list with circle</h3>
+    <pre style="font-size: 16px;">
+        Unordered list in html is used to create list elements which are random in fashion. Its default type is bullet or “disc”. Other types which it supports are “circle” , “square”, “none”.
+
+        <strong>Code:</strong>
+
+        &ltul type="circle" &gt 
+                &ltli&gtFirst &lt/li&gt
+                &ltli&gtSecond &lt/li&gt
+                &ltli&gtThird &lt/li&gt
+                &lt/ul&gt
+
+    </pre>
+    <br><hr><br>
+
+    <h2>Question No-6</h2>
+    <h3>Write code to create an nested list that contain order list(numeric)
+        first then unordered (disc) then again one unordered list (square).
+    </h3>
+    <pre style="font-size: 16px;">
+
+        <strong>Code:</strong>
+
+        &ltol type="1"&gt
+            &ltli&gtCell&lt/li&gt
+            &ltli&gtBall &lt/li&gt
+            &ltul type="disc"&gt
+                &ltli&gtCall&lt/li&gt
+                &ltli&gtTall&lt/li&gt
+                &ltul type="square"&gt
+                    &ltli&gtFan&lt/li&gt
+                    &ltli&gtDesktop&lt/li&gt
+                &lt/ul&gt
+            &lt/ul&gt
+        &lt/ol&gt
+    </pre>
+    <br><hr><br>
+
+    <h2>Question No-7</h2>
+    <h3>Write code to create a link to https://www.prepbytes.com</h3>
+    <pre style="font-size: 16px;">
+        To create links in HTML, we use anchor tags. These tags can be used to redirect to a new HTML page
+        and also to a web page. So in href attribute we can give the web page link or we can give the location
+        of the html file we want to load.
+        target = “_blank” you can give when you want to open that page in a new tab.
+
+        <strong>Code:</strong>
+        
+        &lth2>Link to go to Prepbytes&lt/h2>
+        &lta href=”https://www.prepbytes.com”>Prepbytes&lt/a>
+        &lta href=”https://www.prepbytes.com” target=”_blank”>Prepbytes&lt/a>
+    </pre>
+
+    <br><hr><br>
+
+
+</body>
+</html>
